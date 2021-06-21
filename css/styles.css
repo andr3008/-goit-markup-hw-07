@@ -43,12 +43,13 @@ img {
 
 /* Шапка */
 
-.header-container {
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__container {
   display: flex;
   align-items: center;
-}
-.header-border {
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .logo {
@@ -58,10 +59,10 @@ img {
   line-height: 1.19;
   text-decoration: none;
 }
-.color-web {
+.logo__color-web {
   color: var(--accent-color);
 }
-.color-studio {
+.logo__color-studio {
   color: var(--color-studio);
 }
 
@@ -71,11 +72,11 @@ img {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .item + .item {
+.site-nav__item:not(last-child) {
   margin-left: 50px;
 }
 
-.site-nav .site-link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -91,18 +92,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .site-link:hover,
-.site-nav .site-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.site-nav .current {
-  color: var(--accent-color);
-}
-.active {
+
+.site-nav__link--active {
   position: relative;
   color: var(--accent-color);
 }
-.active::after {
+.site-nav__link--active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -119,11 +118,15 @@ img {
   display: flex;
   margin-left: auto;
 }
-.contact .item + .item {
+.contact__item:not(last child) {
   margin-left: 50px;
 }
 
-.contact .contact-link {
+.contact__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -135,19 +138,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.contact-link:hover,
-.contact-link:focus {
+
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
-.contact-icon,
-.second-contact-icon {
+.contact__icon {
+  margin-right: 10px;
   fill: currentColor;
   transition-property: fill;
 
@@ -155,21 +153,17 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
+.contact__icon:hover,
+.contact__icon:focus {
   fill: currentColor;
-}
-.second-contact-icon:hover,
-.second-contact-icon:focus {
-  fill: currentColor;
-}
-.icon-mg {
-  margin-right: 10px;
 }
 
 /* Герой */
 
-.bg-img {
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/Шапка.jpg');
   background-repeat: no-repeat;
@@ -178,13 +172,8 @@ img {
 .primacy-second-bg-color {
   background-color: var(--primary-second-bg-color);
 }
-.hero {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -208,7 +197,7 @@ img {
   padding-bottom: 0;
 }
 
-.section-title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -218,7 +207,7 @@ img {
   line-height: 1.17;
   text-align: center;
 }
-.section-subtitle {
+.section__subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -229,16 +218,28 @@ img {
 }
 
 /* Особенности */
-
-.great {
+.features {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+.features__title {
   display: none;
 }
+.features__subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
 
-.great-section {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.features__section {
   display: flex;
   justify-content: space-between;
 }
-.great-item::before {
+.features__item::before {
   content: '';
 
   display: block;
@@ -250,19 +251,19 @@ img {
   max-width: 270px;
   height: 120px;
 }
-.icon-antenna::before {
+.features__icon-antenna::before {
   background-image: url(../images/great-icons/Group1.svg);
 }
-.icon-clock::before {
+.features__icon-clock::before {
   background-image: url(../images/great-icons/Group2.svg);
 }
-.icon-diagram::before {
+.features__icon-diagram::before {
   background-image: url(../images/great-icons/Group3.svg);
 }
-.icon-astronaut::before {
+.features__icon-astronaut::before {
   background-image: url(../images/great-icons/Group4.svg);
 }
-.features-text {
+.features__text {
   width: 270px;
   height: 75px;
   font-size: 14px;
@@ -362,6 +363,7 @@ img {
 .team-contact-icon li:focus {
   fill: var(--primary-bg-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /*  Постоянные  клиенты */
@@ -386,6 +388,7 @@ img {
 .client:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .section-border svg {
@@ -481,6 +484,7 @@ img {
 .footer-icon:hover {
   fill: var(--primary-bg-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .footer-social-icons li:hover {
@@ -633,9 +637,10 @@ img {
 }
 .modal {
   position: absolute;
-
-  width: 528px;
-  height: 581px;
+  width: 90%;
+  height: 90%;
+  max-width: 528px;
+  max-height: 581px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -891,8 +896,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);

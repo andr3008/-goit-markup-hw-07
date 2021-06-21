@@ -19,36 +19,40 @@
   <body>
     <!-- Шапка -->
 
-    <header class="header-border">
-      <div class="container header-container">
+    <header class="header">
+      <div class="container header__container">
         <a href="" class="logo">
-          <span class="color-web">Web</span><span class="color-studio">Studio</span></a
+          <span class="logo__color-web">Web</span><span class="logo__color-studio">Studio</span></a
         >
 
         <!-- Навигация -->
 
         <nav>
-          <ul class="site-nav list item">
-            <li class="item"><a href="./index.html" class="site-link current active">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="site-link">Портфолио</a></li>
-            <li class="item"><a href="" class="site-link">Контакты</a></li>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Контакты -->
 
         <ul class="contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link contact-icon">
-              <svg class="icon-mg" width="16" height="12">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/header-icon/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link second-contact-icon">
-              <svg class="icon-mg" width="10" height="16">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/header-icon/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -61,17 +65,18 @@
     <!-- Герой -->
 
     <main>
-      <section class="hero bg-img primacy-second-bg-color">
+      <section class="hero primacy-second-bg-color">
         <div>
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-
-          <!-- Модалка -->
-
-          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
+
+        <!-- Модалка -->
+
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal-icon" data-modal-close>
@@ -105,10 +110,10 @@
                   </svg>
                 </span>
               </label>
-              <label class="form-field" for="email"
+              <label class="form-field" for="mail"
                 >Почта
                 <span class="modal-form-wrap">
-                  <input class="input-form" type="email" name="email" id="email" />
+                  <input class="input-form" type="email" name="email" id="mail" />
                   <svg width="18" height="18" class="icon-form">
                     <use
                       href="./images/modal-icon/symbol-defs-mdal2.svg#icon-email-black-18dp-1-1"
@@ -147,8 +152,9 @@
                 </span>
               </label>
 
-              <label for="submit"></label>
-              <button class="submit-btn" type="submit">Отправить</button>
+              <label for="submit">
+                <button class="submit-btn" type="submit" id="submit">Отправить</button>
+              </label>
             </form>
           </div>
         </div>
@@ -156,31 +162,32 @@
 
       <!-- Особенности -->
 
-      <section class="section no-padding">
+      <section class="features">
         <div class="container">
-          <h2 class="section-title great">Особенности</h2>
-          <ul class="great-section list great-icons">
-            <li class="great-item icon-antenna">
-              <h3 class="section-subtitle">Внимание к деталям</h3>
-              <p class="features-text">
+          <h2 class="features__title">Особенности</h2>
+
+          <ul class="features__section list">
+            <li class="features__item features__icon-antenna">
+              <h3 class="features__subtitle">Внимание к деталям</h3>
+              <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="great-item icon-clock">
-              <h3 class="section-subtitle">Пунктуальность</h3>
-              <p class="features-text">
+            <li class="features__item features__icon-clock">
+              <h3 class="features__subtitle">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="great-item icon-diagram">
-              <h3 class="section-subtitle">Планирование</h3>
-              <p class="features-text">
+            <li class="features__item features__icon-diagram">
+              <h3 class="features__subtitle">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="great-item icon-astronaut">
-              <h3 class="section-subtitle">Современные технологии</h3>
-              <p class="features-text">
+            <li class="features__item features__icon-astronaut">
+              <h3 class="features__subtitle">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -192,7 +199,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
 
           <ul class="we-do-section list">
             <li class="item">
@@ -215,7 +222,8 @@
 
       <section class="section our-team-bg-color">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
+
           <ul class="our-team-section list">
             <li class="team-item">
               <img src="./images/img3.jpg" alt="Фото Игоря" width="270" />
@@ -334,8 +342,9 @@
       <!-- Постоянные  клиенты -->
 
       <section class="section">
-        <h2 class="section-title">Постоянные клиенты</h2>
         <div class="container">
+          <h2 class="section__title">Постоянные клиенты</h2>
+
           <ul class="list client-icons section-border">
             <li>
               <svg class="client">
@@ -421,14 +430,15 @@
         <div class="subscription">
           <span>Подпишитесь на рассылку</span>
           <form class="form-subscription">
-            <label for="email"></label>
-            <input
-              class="subscription-mail"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="email"
-            />
+            <label for="email">
+              <input
+                class="subscription-mail"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email"
+              />
+            </label>
             <button class="subscription-btn" type="submit">Подписаться</button>
           </form>
         </div>
