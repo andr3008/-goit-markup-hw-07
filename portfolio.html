@@ -21,16 +21,14 @@
 
     <header class="header">
       <div class="container header__container">
-        <a href="" class="logo">
-          <span class="logo__color-web">Web</span><span class="logo__color-studio">Studio</span></a
-        >
+        <a href="" class="logo"> <span>Web</span><span class="logo header__logo">Studio</span></a>
 
         <!-- Навигация -->
 
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
@@ -232,63 +230,63 @@
 
     <!-- Подвал -->
 
-    <footer class="primacy-second-bg-color">
-      <div class="container footer-padding footer-container">
-        <div class="icon">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
           <a href="./index.html" class="logo">
-            <span class="color-web footer-logo">Web</span
-            ><span class="second-color-studio footer-logo">Studio</span></a
+            <span>Web</span><span class="logo footer__logo">Studio</span></a
           >
-          <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
 
           <ul class="list">
             <li>
-              <a href="mailto:info@devstudio.com" class="footer-link footer-margin"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="icon join">
-          <span class="join-bg">Присоединяйтесь</span>
-          <ul class="list footer-social-icons">
+
+        <div class="footer__join">
+          <span class="footer__join-bg">Присоединяйтесь</span>
+          <ul class="list footer__social-icons">
             <li>
-              <svg width="20" height="20" class="footer-icon">
+              <svg width="20" height="20">
                 <use href="./images/social-icons/symbol-defs-social.svg#icon-instagram"></use>
               </svg>
             </li>
             <li>
-              <svg width="20" height="20" class="footer-icon">
+              <svg width="20" height="20">
                 <use href="./images/social-icons/symbol-defs-social.svg#icon-twitter"></use>
               </svg>
             </li>
             <li>
-              <svg width="20" height="20" class="footer-icon">
+              <svg width="20" height="20">
                 <use href="./images/social-icons/symbol-defs-social.svg#icon-facebook"></use>
               </svg>
             </li>
             <li>
-              <svg width="20" height="20" class="footer-icon">
+              <svg width="20" height="20">
                 <use href="./images/social-icons/symbol-defs-social.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <div class="subscription">
+
+        <div class="footer__subscription">
           <span>Подпишитесь на рассылку</span>
-          <form class="form-subscription">
-            <label for="email"></label>
-            <input
-              class="subscription-mail"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="email"
-            />
-            <button class="subscription-btn" type="submit">Подписаться</button>
+          <form class="subscription__form">
+            <label for="email">
+              <input
+                class="subscription__mail"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email"
+              />
+            </label>
+            <button class="subscription__btn" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
