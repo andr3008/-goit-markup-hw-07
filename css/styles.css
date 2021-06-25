@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -13,8 +13,8 @@
   --social-icons-color: #afb1b8;
   --we-do-text-position: rgba(47, 48, 58, 0.8);
   --backdrop-color: rgba(0, 0, 0, 0.2);
-}
-body {
+} */
+/* body {
   margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -30,42 +30,42 @@ body {
 }
 img {
   display: block;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-}
+}  */
 
 /* Шапка */
 
-.header {
+/* .header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
 .header__container {
   display: flex;
   align-items: center;
-}
+} */
 
-.logo {
+/* .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
-}
+} */
 
-.header__logo {
+/* .header__logo {
   color: var(--color-studio);
-}
+} */
 
 /* Навигация */
 
-.site-nav {
+/* .site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -108,10 +108,10 @@ img {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-}
+} */
 
 /* Контакты */
-.contact {
+/* .contact {
   display: flex;
   margin-left: auto;
 }
@@ -128,7 +128,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em
   text-decoration: none;
 
   transition-property: color;
@@ -153,11 +153,11 @@ img {
 .contact__icon:hover,
 .contact__icon:focus {
   fill: currentColor;
-}
+} */
 
 /* Герой */
 
-.hero {
+/* .hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -209,11 +209,11 @@ img {
 .hero__button:focus {
   color: var(--primary-bg-color);
   background-color: var(--hero-button-hover-color);
-}
+} */
 
 /* Секции */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -236,9 +236,9 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-}
+} */
 
-/* Особенности */
+/* Особенности
 .features {
   padding-top: 94px;
   padding-bottom: 0;
@@ -290,11 +290,11 @@ img {
   font-size: 14px;
   line-height: 2;
   margin: 0;
-}
+} */
 
 /* Чем мы занимаемся */
 
-.we-do__section {
+/* .we-do__section {
   display: flex;
   justify-content: center;
   position: relative;
@@ -320,11 +320,11 @@ img {
 }
 .we-do__item:nth-child(n + 2) {
   margin-left: 30px;
-}
+} */
 
 /* Наша команда  */
 
-.our-team-bg-color {
+/* .our-team-bg-color {
   background: var(--our-team-bg-color);
 }
 .team__section {
@@ -388,11 +388,11 @@ img {
   fill: var(--primary-bg-color);
   background-color: var(--accent-color);
   cursor: pointer;
-}
+} */
 
 /*  Постоянные  клиенты */
 
-.clients {
+/* .clients {
   display: inline-flex;
   align-items: center;
 }
@@ -417,10 +417,10 @@ img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
-}
+} */
 
 /* Подвал */
-.footer__container {
+/* .footer__container {
   display: flex;
   padding-bottom: 60px;
   padding-top: 60px;
@@ -566,7 +566,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscription__btn::after {
-  background-image: url(../images/modal-icon/icon\ send.svg);
+  background-image: url(../images/modal-icon/icon-send.svg);
 
   width: 24px;
   height: 24px;
@@ -579,11 +579,11 @@ img {
 }
 .subscription__btn:hover {
   background-color: var(--hero-button-hover-color);
-}
+} */
 
 /* Модалка */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -819,20 +819,20 @@ img {
 }
 .submit-btn:hover {
   background-color: var(--hero-button-hover-color);
-}
+} */
 
 /* Портфолио */
 
 /* Фильтры */
 
-.filter {
+/* .portfolio {
   display: none;
   border-top: 1px solid var(--header-border-color);
-}
+} */
 
 /* Кнопки */
 
-.filter__block {
+/* .filter {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
@@ -869,10 +869,10 @@ img {
   color: var(--primary-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 /* Проекты  */
 
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
 }
@@ -960,4 +960,4 @@ img {
 
   font-size: 16px;
   line-height: 1.88;
-}
+} */
