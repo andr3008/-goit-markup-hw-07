@@ -2,14 +2,15 @@
 @import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixin';
+
 @import './base/container';
 @import './base/section';
 @import './base/common';
 @import './base/logo';
 @import './base/features-section';
 @import './base/footer__container';
-@import './base/modal';
 
+@import './components/modal';
 @import './components/header';
 @import './components/hero';
 @import './components/features';
